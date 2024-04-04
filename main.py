@@ -4,7 +4,7 @@ base=float(input("enter your base:"))
 height=float(input("enter your height: "))
 
 area=0.5*base*height
-print("Area is: ",area) #string thakle + dite hobe otherwise ,
+print("Area is: ",area) #for string, use '+'sign otherwise comma
 '''
 # math function
 '''
@@ -72,7 +72,7 @@ print(sum)'''
 
 # List as user input
 '''n=input("enter a text of number:") # [10 20 30]
-list=n.split()  # [10,20,30] , character follow kore split korbe
+list=n.split()  # [10,20,30] , split on following character 
 print(list)'''
 # dictionary
 '''d={        #key: element
@@ -86,9 +86,9 @@ print(d.get(103,"not found"))
 t=(
     1,2,3,4
 )
-print("tuple : ",t) # tuple a value change kora jay na
+print("tuple : ",t) # in tuple, value not change 
 
-# set , set a value duplicate hoy na
+# set , has no duplicate value
 s={9,6,5}
 print("set : ",s)
 #list ke set a transfer
@@ -146,13 +146,13 @@ class C(A):     # heirarchicle inheritance
         print("i am C")
 class D(B,C):      # mutiple inheritance
     def display4(self):
-        pass   # body empty thakle pass keyword use korte hoy
+        pass   # for empty 
 
 ob=D()
 ob.display2()'''
 
 # Abstruction
-'''from abc import ABC,abstract method  # abc module theke ABC means abstract base class and abstract method import kora hoise
+'''from abc import ABC,abstract method  # ABC means abstract base class and abstract method import 
 class shape(ABC):
     def __init__(self,base,height):
         self.base=base
